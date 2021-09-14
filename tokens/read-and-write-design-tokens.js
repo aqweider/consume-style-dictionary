@@ -13,9 +13,9 @@ const graphqlWithAuth = graphql.defaults({
 
 const PLATFORM_DELIVERABLE = "css";
 const variables = {
-  owner: process.env.GITHUB_REPO_OWNER,
-  name: process.env.GITHUB_REPO_NAME,
-  tree: `${process.env.GITHUB_REPO_BRANCH}:output/${PLATFORM_DELIVERABLE}`,
+  owner: "aqweider",
+  name: "consume-style-dictionary",
+  tree: `main:output/${PLATFORM_DELIVERABLE}`,
 };
 
 async function main() {
@@ -41,10 +41,11 @@ async function main() {
     `,
     variables
   );
-  
+
+  console.log("result", repository)
   // https://nodejs.org/api/fs.html
   repository.content.entries.forEach(({ name, object: { text } }) => {
-    fs.writeFileSync(`./src/tokens/${name}`, text);
+    fs.writeFileSync(`./tokens/${name}`, text);
   });
 }
 

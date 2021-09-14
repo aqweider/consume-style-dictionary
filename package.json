@@ -1,0 +1,53 @@
+{
+  "name": "kazidomi",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prestart": "node src/tokens/read-and-write-design-tokens.js"
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "emotion"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "post-checkout": "npm run prestart"
+    }
+  },
+  "dependencies": {
+    "@emotion/css": "^11.1.3",
+    "@emotion/react": "^11.4.1",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "@octokit/graphql": "^4.8.0",
+    "@react-hook/event": "^1.2.3",
+    "@react-hook/timeout": "^2.1.1",
+    "dotenv": "^10.0.0",
+    "husky": "^7.0.2",
+    "lodash": "^4.17.21",
+    "next": "11.1.0",
+    "next-themes": "^0.0.15",
+    "rc-rate": "^2.9.1",
+    "react": "17.0.2",
+    "react-device-detect": "^1.17.0",
+    "react-dom": "17.0.2",
+    "react-icomoon": "^2.4.1",
+    "react-multi-carousel": "^2.6.5",
+    "swiper": "^7.0.1"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.3.0",
+    "@types/react": "17.0.19",
+    "babel-plugin-macros": "^3.1.0",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.0",
+    "tailwindcss": "^2.2.7",
+    "twin.macro": "^2.7.0",
+    "typescript": "4.3.5"
+  }
+}

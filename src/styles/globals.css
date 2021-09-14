@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Faro';
+  src: local('Faro'), url(../assets/fonts/Faro-DisplayLucky.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Atlas Grotesk Light';
+  src: local('Atlas Grotesk Light'), url(../assets/fonts/AtlasGrotesk-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Atlas Grotesk Regular';
+  src: local('Atlas Grotesk Regular'), url(../assets/fonts/AtlasGrotesk-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Atlas Grotesk Medium';
+  src: local('Atlas Grotesk Medium'), url(../assets/fonts/AtlasGrotesk-Medium.otf) format('opentype');
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-container {
+
+}
+
+
+.btn-social--icon {
+  position: absolute;
+  left: 15px;
+  right: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.btn-fab {
+  display: block !important;
+  margin: 0 auto;
+}
+
+.text-center {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; /** Y-axis align **/
+  justify-content: center; /** X-axis align **/
+}
+
+/* Rate styles */
+.xs-rate li {
+  font-size: 15px;
+}
+.sm-rate li {
+  font-size: 15px;
+}
+.md-rate li {
+  font-size: 20px;
+}
+.lg-rate li {
+  font-size: 28px;
+}
+.rate-style li {
+  font-family: "sans-serif";
+  line-height: 0.5;
+  margin-right: 5px;
+  color: #0F0F0F;
+}
+.rate-style .rc-rate-star-half .rc-rate-star-first,
+.rate-style .rc-rate-star-full .rc-rate-star-second {
+  color: #0F0F0F;
+}
+
+/* Carousel styles */
+.dot-list {
+  position: relative !important;
+}
+.dot-list button {
+  border-radius: 0 !important;
+  border: 0 !important;
+  width: 40px !important;
+  height: 1px !important;
+  background-color: #0F0F0F;
+}
+.react-multi-carousel-list {
+  margin-bottom: 55px !important;
+}
+.react-multi-carousel-dot--active button {
+  height: 3px !important;
+}
+
+/** Product page **/
+.container-with-dots {
+  display: block !important;
+}
+
+.products-swiper .swiper-slide {
+  width: auto;
+}
+
+.knowledge-bg{
+  background-image: url("../assets/images/knowledge-bg.png");
+}
+
+.btn-primary--on-dark:hover {
+
+}
