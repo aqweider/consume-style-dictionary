@@ -135,5 +135,5 @@
   --effect-button-segment-middle-3-color: rgba(188, 191, 195, 1);
   --effect-button-segment-middle-3-offset-x: 0;
   --effect-button-segment-middle-3-offset-y: -1;
-  --effect-button-segment-middle-3-spread: 0;
+  --effect-button-segment-middle-3-spread: 0.5;
 }
