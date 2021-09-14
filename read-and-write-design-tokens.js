@@ -15,7 +15,7 @@ const PLATFORM_DELIVERABLE = "css";
 const variables = {
   owner: "aqweider",
   name: "consume-style-dictionary",
-  tree: `main:output/${PLATFORM_DELIVERABLE}`,
+  tree: `main:tokens`,
 };
 
 async function main() {
@@ -42,7 +42,6 @@ async function main() {
     variables
   );
 
-  console.log("result", repository)
   // https://nodejs.org/api/fs.html
   repository.content.entries.forEach(({ name, object: { text } }) => {
     fs.writeFileSync(`./tokens/${name}`, text);

@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prestart": "node src/tokens/read-and-write-design-tokens.js"
+    "prestart": "node read-and-write-design-tokens.js"
   },
   "babelMacros": {
     "twin": {
